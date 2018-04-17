@@ -2,28 +2,19 @@
 <html>
     <head>
         <title>botones</title>
-        <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+        <link rel = "stylesheet" type = "text/css" href = "styles/myStyles.css" />
     </head>
     <body>
-        <div class="txt1" style="border:1px solid red; width:200px; height:100px; float:left">
-            <p>texto 1</p>
-        </div>
-        <div class="txt2" style="border:1px solid green; width:200px; height:100px; float:right">
-            
-        </div>
+        <div class="myList">
+            <div class="myList__lista" id="txt1">
+                texto 1
+            </div>
+            <div class="myList__lista" id="txt2">
+                
+            </div>
        
-        <a href="" class="boton" style="clear:both; display:block">boton1</a>
+        <button class="myList--click" id="button">boton1</button>
+    </div>
+    <script src="javascritps/main.js"></script>
     </body>
-    <script>
-       $( document ).ready(function() {
-           
-            $('.boton').on( "click", function(){
-                var valorSpan = $('.txt1 p').text();
-                $('.txt2').html('<p>'+ valorSpan +'<p>');
-            });
-        });
-    </script>
 </html>
