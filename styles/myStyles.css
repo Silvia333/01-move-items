@@ -3,7 +3,7 @@
     display:block;
     overflow:hidden;
 }
-.myList__lista{
+.myList__list{
     color:#000;
     font-family:Arial;
     width:300px;
@@ -20,7 +20,7 @@
     color:#cc0000;
     font-weight:bold;
 }
-button{
+.myList__button{
     width:150px;
     text-align:center;
     text-transform:uppercase;
