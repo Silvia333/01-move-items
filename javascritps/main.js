@@ -7,3 +7,5 @@ var btn = document.getElementById("button");
         var txt2 = document.getElementById("txt2");
         txt2.innerHTML=txt1;
     }
+
+    
