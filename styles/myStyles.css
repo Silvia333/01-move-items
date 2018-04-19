@@ -11,14 +11,13 @@
     height:100px;
     padding:10px;
     font-size:14px;
+    list-style:none;
 }
-#txt1{  
+#ul{  
     float:left;
 }
-#txt2{
+#ul2{
     float:right;
-    color:#cc0000;
-    font-weight:bold;
 }
 .myList__button{
     width:150px;
