@@ -1,9 +1,10 @@
-var btn = document.getElementById("button");
-var btn2 = document.getElementById("button2");
-var ul = document.getElementById("ul");
-var ul2 = document.getElementById("ul2");
-var li = document.querySelector('#ul li');
-var goToRight = true;
+let btn = document.getElementById("button");
+let btn2 = document.getElementById("button2");
+let container1 = document.querySelector(".wrapper_one");
+let container2 = document.querySelector(".wrapper_two");
+let ul = document.getElementById("ul");
+let arrayLi = document.getElementsByTagName('li');
+let goToRight = true;
 
 btn.addEventListener("click", moveLi);
 btn2.addEventListener("click", addLi);
@@ -11,18 +12,17 @@ btn2.addEventListener("click", addLi);
 function moveLi(){
     
     if(goToRight){
-        ul2.appendChild(li);
-        //goToRight = false;
+        container2.appendChild(ul);
+        goToRight = false;
     }else{
-        ul.appendChild(li);
-        //goToRight = true;
+        container1.appendChild(ul);
+        goToRight = true;
     }
-    goToRight = !goToRight;
 }
 
 function addLi(){
-    var newLi = document.createElement("li"); 
-    var newLiContent = document.createTextNode(prompt("Please enter your text", "")); 
+    let newLi = document.createElement("li"); 
+    let newLiContent = document.createTextNode(prompt("Please enter your text", "")); 
     newLi.appendChild(newLiContent); //añade texto al div creado. 
     ul.appendChild(newLi);
 }
