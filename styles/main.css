@@ -1,4 +1,5 @@
 .myList{
+  /* max-width y usame porcentajes que tú sabes maquetar! o flex! hazme responsive */
     width:900px;
     display:block;
     overflow:hidden;
@@ -9,7 +10,7 @@
     font-size:14px;
     list-style:none;
 }
-.wrapper_one{  
+.wrapper_one{
     float:left;
     width:300px;
     border:1px solid #eee;
